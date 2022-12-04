@@ -24,6 +24,10 @@ public class SmartDocument extends Document {
     @Getter @Setter
     public String result;
 
+    public SmartDocument(String gcsPath) {
+        super();
+    }
+
     @SneakyThrows
     public String parse() {
         List<AnnotateImageRequest> requests = new ArrayList<>();
